@@ -35,8 +35,8 @@ evaluated by roc_auc_score, auc = 0.897788089.
 
 ## Model Tuning
 ### Manual tuning and retrain
-best parameters: <br>
--'learning_rate': 0.01, 
+best parameters: 
+- 'learning_rate': 0.01, 
 - 'metric': 'auc', 
 - 'seed': 42, 
 - 'objective': 'binary',
@@ -70,10 +70,12 @@ best parameters: <br>
 After Auto tuning, we got a training's auc= 0.914706 and	valid_1's auc= 0.898381, which is very similar and only a little lower than manual tuned reslut.
 
 ## Stacking
-level 1 LightGBM
-auc = 0.899724
-level 2 Logistic Regression 
-auc = 0.8996087382850039
+1) Create 3 LightGBM models with top 3 tuned parameters and create out-of-fold predictions for the above 6 models, as Level 1 model. We got auc = 0.899724
+2) Train a Logistic Regression as level 2 model with level 1 features only. we got an auc = 0.8996087382850039
+3) Train a LightGBM as level 2 model with level 1 features and raw features, and got 
+
+
+
 
 
 
