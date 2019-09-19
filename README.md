@@ -14,12 +14,12 @@ Santander published this task on Kaggle and invite Kagglers to identify which cu
 - bayes_opt: bayesian optimization
 
 ## Data Exploration Analysis
-- define numerical and categorical variables： all the features are numerical.
+- Define numerical and categorical variables： All the features are numerical.
 - Target distribution
 - Missing values
 - Unqiue values
 - Feature correlation
-- Normality check (scipy.stats.normaltest(), sns.distplot): all 200 features in train and test datasets are normally distributed.
+- Normality check (*scipy.stats.normaltest(), sns.distplot*):  All 200 features in train and test datasets are normally distributed.
 
 ## Feature Engineering
 ### Standardization 
