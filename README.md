@@ -10,7 +10,7 @@ Santander published this task on Kaggle and invite Kagglers to identify which cu
 - scipy: statistic 
 - matplotlib, seaborn: data visualizatin
 - sklearn: sci-kit Learn for machine learning
-- lightgbm, xgboost: lightgbm, xgboost algorithm
+- lightgbm: lightgbm algorithm
 - bayes_opt: bayesian optimization
 
 ## Data Exploration Analysis
