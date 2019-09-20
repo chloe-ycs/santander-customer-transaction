@@ -22,6 +22,8 @@ Santander published this task on Kaggle and invite Kagglers to identify which cu
 - Normality check (*scipy.stats.normaltest(), sns.distplot*):  All 200 features in train and test datasets are normally distributed.
 
 ## Feature Engineering
+Unfortunately most of the feature engineering techiniques didn't seem to work in this task for tree-based models. However, feature scallings are still quite effective for linear models
+
 ### Standardization 
 Both time and cross validation score (which use logistic regression and roc-auc scoring) has been improved with feature standardization
 
