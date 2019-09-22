@@ -3,7 +3,7 @@
 ## Project Background
 Santander Bank is continually challenging machine learning algorithms to identify new ways to solve our most common challenge, binary classification problems such as: is a customer satisfied? Will a customer buy this product? Can a customer pay this loan? <br>
 
-Santander published this task on Kaggle and invite Kagglers to identify which customers will make a specific transaction in the future, irrespective of the amount of money transacted. The data provided for this competition is anonymized but has the same structure as the real data which is available to solve this problem.
+Santander published this task on Kaggle and invite Kagglers to identify which customers will make a specific transaction in the future, irrespective of the amount of money transacted. The data provided for this task is anonymized but has the same structure as the real data which is available to solve this problem.
 
 ## Reuiqred Libraries
 - numpy, pandas: numeric data and dataframe operation
