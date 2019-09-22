@@ -82,6 +82,6 @@ After Auto tuning, we got a training's auc= 0.914706 and	valid_1's auc= 0.898381
 
 
 
-
-
+#### Tips
+If ipynb file fails to load, it can also be opened through [nbviewer](https://nbviewer.jupyter.org/github/chloe-ycs/santander-customer-transaction/blob/master/code/Santander-Customer-Transaction-Prediction.ipynb)
 
