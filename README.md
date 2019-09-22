@@ -28,8 +28,10 @@ Unfortunately most of the feature engineering techiniques didn't seem to work in
 Both time and cross validation score (which use logistic regression and roc-auc scoring) has been improved with feature standardization
 
 ### Feature impportance 
-- from logistic regression (importance from coefficient ) 
-- from lightgbm (importance按照某一个特征在构建决策树的过程中参与分裂的次数来决定的，分裂次数越多越重要)
+- From logistic regression *(LogisticRegression(solver='lbfgs').fit()*
+importance from coefficient
+- From lightgbm *(lgb.LGBMClassifier.fit())*
+importance按照某一个特征在构建决策树的过程中参与分裂的次数来决定的，分裂次数越多越重要<br>
 综合来看， var_81,139,6,12,53,174,166,76,34 是比较重要的几个feature.
 
 ## Train the model - LightGBM
