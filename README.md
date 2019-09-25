@@ -76,10 +76,16 @@ After Auto tuning, we got a training's auc= 0.914706 and	valid_1's auc= 0.898381
 ## Stacking
 1) Create 3 LightGBM models with top 3 tuned parameters and create out-of-fold predictions for the above 6 models, as Level 1 model. We got auc = 0.899724
 
+Score for model 1 is 0.841177
+Score for model 2 is 0.898611
+Score for model 3 is 0.897664
+
 2) Train a Logistic Regression as level 2 model with level 1 features only. we got an auc = 0.8996087382850039
-
+All AUC for level 2 Logistic Regression: 0.8984154948398123
 3) Train a LightGBM as level 2 model with level 1 features and raw features, and got 
-
+Score for model 1 is 0.893821
+Score for model 2 is 0.896681
+Score for model 3 is 0.893878
 
 
 #### Tips
