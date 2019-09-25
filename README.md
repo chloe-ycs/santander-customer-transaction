@@ -87,7 +87,7 @@ We got AUC for level 2 Logistic Regression: 0.8984154948398123
 Score for model 1 is 0.893821 <br>
 Score for model 2 is 0.896681 <br>
 Score for model 3 is 0.893878 <br>
-<br>
+
 Compared to the manual tunning reslut, stacking did not generate a much higher score, it may not be a good choice.
 
 #### Tips
