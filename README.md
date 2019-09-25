@@ -74,19 +74,21 @@ best parameters: <br>
 After Auto tuning, we got a training's auc= 0.914706 and	valid_1's auc= 0.898381, which is very similar and only a little lower than manual tuned reslut.
 
 ## Stacking
-1) Create 3 LightGBM models with top 3 tuned parameters and create out-of-fold predictions for the above 6 models, as Level 1 model. We got auc = 0.899724
+The basic idea behind stacked generalization is to use a pool of base classifiers, then using another classifier to combine their predictions, with the aim of reducing the generalization error. Let's try to ensenmble models and see the result: <br>
+1) Create 3 LightGBM models with top 3 tuned parameters and create out-of-fold predictions for the above models, as Level 1 model. We got <br>
+Score for model 1 is 0.841177 <br>
+Score for model 2 is 0.898611 <br>
+Score for model 3 is 0.897664 <br>
 
-Score for model 1 is 0.841177
-Score for model 2 is 0.898611
-Score for model 3 is 0.897664
+2) Train a Logistic Regression as level 2 model with level 1 features only. 
+We got AUC for level 2 Logistic Regression: 0.8984154948398123
 
-2) Train a Logistic Regression as level 2 model with level 1 features only. we got an auc = 0.8996087382850039
-All AUC for level 2 Logistic Regression: 0.8984154948398123
-3) Train a LightGBM as level 2 model with level 1 features and raw features, and got 
-Score for model 1 is 0.893821
-Score for model 2 is 0.896681
-Score for model 3 is 0.893878
-
+3) Train a LightGBM as level 2 model with level 1 features and raw features, and got <br>
+Score for model 1 is 0.893821 <br>
+Score for model 2 is 0.896681 <br>
+Score for model 3 is 0.893878 <br>
+<br>
+Compared to the manual tunning reslut, stacking did not generate a much higher score, it may not be a good choice.
 
 #### Tips
 If .ipynb file in the code folder fails to load, it can also be opened through [nbviewer](https://nbviewer.jupyter.org/github/chloe-ycs/santander-customer-transaction/blob/master/code/Santander-Customer-Transaction-Prediction.ipynb)
